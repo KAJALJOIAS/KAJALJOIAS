@@ -6,200 +6,221 @@
 
 <style>
 
-/* Geral */
+/* ESTILO GERAL */
+
 body{
-  font-family: Arial, sans-serif;
-  margin:0;
-  background:#fdfbf6;
-  color:#333;
+font-family: Arial, sans-serif;
+margin:0;
+background:#fdfbf6;
+color:#333;
 }
 
-/* Cabeçalho */
+/* CABEÇALHO */
+
 header{
-  background:black;
-  color:#f5d05a; /* dourado luxuoso */
-  padding:40px 20px;
-  text-align:center;
+background:black;
+color:#d4af37;
+padding:40px 20px;
+text-align:center;
 }
 
 header h1{
-  margin:0;
-  letter-spacing:4px;
-  font-size:3em;
+margin:0;
+letter-spacing:4px;
+font-size:42px;
 }
 
 header p{
-  margin-top:10px;
-  font-size:1.2em;
+margin-top:10px;
+font-size:18px;
+color:#f5e6b0;
 }
 
-/* Menu */
+/* MENU */
+
 nav{
-  background:#f5d05a;
-  padding:15px;
-  text-align:center;
+background:#d4af37;
+padding:15px;
+text-align:center;
 }
 
 nav a{
-  margin:15px;
-  text-decoration:none;
-  color:black;
-  font-weight:bold;
-  font-size:1.1em;
-  transition: color 0.3s;
+margin:15px;
+text-decoration:none;
+color:black;
+font-weight:bold;
+font-size:18px;
 }
 
-nav a:hover{
-  color:#000;
-  text-shadow: 1px 1px 2px #555;
-}
+/* SEÇÕES */
 
-/* Seções */
 section{
-  padding:60px 20px;
-  text-align:center;
+padding:60px 20px;
+text-align:center;
 }
 
-/* Galeria de joias */
+/* GALERIA */
+
 .galeria{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:30px;
-  padding:40px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+padding:40px;
 }
 
 .item{
-  background:white;
-  padding:20px;
-  border-radius:12px;
-  box-shadow:0 0 20px rgba(0,0,0,0.15);
-  transition: transform 0.3s;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 15px rgba(0,0,0,0.15);
+transition:transform 0.3s;
 }
 
 .item:hover{
-  transform: scale(1.05);
+transform:scale(1.05);
 }
 
 .item img{
-  max-width:100%;
-  border-radius:10px;
+width:100%;
+border-radius:8px;
 }
 
-/* Serviços */
+/* SERVIÇOS */
+
 .servicos{
-  font-size:18px;
-  line-height:2;
-  color:#333;
+font-size:18px;
+line-height:2;
 }
 
-/* Contactos */
+/* CONTACTOS */
+
 #contactos p{
-  font-size:18px;
-  line-height:1.8;
+font-size:18px;
+line-height:1.8;
 }
 
-/* Botão WhatsApp */
+/* WHATSAPP */
+
 .whatsapp{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25d366;
-  color:white;
-  padding:15px 20px;
-  border-radius:50px;
-  font-size:18px;
-  text-decoration:none;
-  box-shadow:0 4px 6px rgba(0,0,0,0.3);
-  transition: transform 0.2s;
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+font-size:18px;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
 }
 
-.whatsapp:hover{
-  transform: scale(1.1);
-}
+/* RODAPÉ */
 
-/* Rodapé */
 footer{
-  background:black;
-  color:#f5d05a;
-  padding:30px;
-  text-align:center;
+background:black;
+color:#d4af37;
+padding:30px;
+text-align:center;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <header>
-  <h1>KAJALJOIAS</h1>
-  <p>Elegância, tradição e confiança</p>
+
+<h1>KAJALJOIAS</h1>
+<p>Elegância, tradição e confiança</p>
+
 </header>
 
 <nav>
-  <a href="#joias">Joias</a>
-  <a href="#servicos">Serviços</a>
-  <a href="#contactos">Contactos</a>
+
+<a href="#joias">Joias</a>
+<a href="#servicos">Serviços</a>
+<a href="#contactos">Contactos</a>
+
 </nav>
 
 <section id="joias">
-  <h2>As nossas joias</h2>
-  <div class="galeria">
 
-    <div class="item">
-      <h3>Anéis</h3>
-      <img src="anel.jpg" alt="Anéis de Ouro e Prata">
-      <p>Ouro e prata de alta qualidade</p>
-    </div>
+<h2>As nossas joias</h2>
 
-    <div class="item">
-      <h3>Colares</h3>
-      <img src="colar.jpg" alt="Colares Elegantes">
-      <p>Design elegante e exclusivo</p>
-    </div>
+<div class="galeria">
 
-    <div class="item">
-      <h3>Pulseiras</h3>
-      <img src="pulseira.jpg" alt="Pulseiras Clássicas">
-      <p>Clássicas e modernas</p>
-    </div>
+<div class="item">
+<h3>Anéis</h3>
+<img src="anel.jpg">
+<p>Ouro e prata de alta qualidade</p>
+</div>
 
-    <div class="item">
-      <h3>Relógios</h3>
-      <img src="relogio.jpg" alt="Relógios para Todos os Estilos">
-      <p>Para todos os estilos</p>
-    </div>
+<div class="item">
+<h3>Colares</h3>
+<img src="colar.jpg">
+<p>Design elegante</p>
+</div>
 
-  </div>
+<div class="item">
+<h3>Pulseiras</h3>
+<img src="pulseira.jpg">
+<p>Clássicas e modernas</p>
+</div>
+
+<div class="item">
+<h3>Relógios</h3>
+<img src="relogio.jpg">
+<p>Para todos os estilos</p>
+</div>
+
+</div>
+
 </section>
 
 <section id="servicos">
-  <h2>Serviços</h2>
-  <div class="servicos">
-    Substituição de pilhas e braceletes<br>
-    Reparação de relógios<br>
-    Consertos de ouro e prata<br>
-    Enfiamento de colares<br>
-    Furagem de orelhas
-  </div>
+
+<h2>Serviços</h2>
+
+<div class="servicos">
+
+Substituição de pilhas e braceletes<br>
+Reparação de relógios<br>
+Consertos de ouro e prata<br>
+Enfiamento de colares<br>
+Furagem de orelhas
+
+</div>
+
 </section>
 
 <section id="contactos">
-  <h2>Contactos</h2>
-  <p>
-    Morada: Av. Júlio Dinis 6, CC Arco Íris, Loja 8<br>
-    Telefone: 211 993 379<br>
-    Horário: 9h30 - 18h30
-  </p>
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3121.123456!2d-9.139681!3d38.716123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19347abcd!2sCC%20Arco%20Íris!5e0!3m2!1spt-PT!2spt!4v1690000000000!5m2!1spt-PT!2spt" 
-    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-  </iframe>
+
+<h2>Contactos</h2>
+
+<p>
+Morada: Av. Júlio Dinis 6A, CC Arco Íris, Loja 8, Lisboa<br><br>
+Telefone: 211 993 379<br><br>
+Horário: 9h30 - 18h30
+</p>
+
+<iframe
+src="https://www.google.com/maps?q=Av.+J%C3%BAlio+Dinis+6A,+Lisboa&output=embed"
+width="100%"
+height="300"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
 </section>
 
-<a href="https://wa.me/351911234567" class="whatsapp" target="_blank">WhatsApp</a>
+<a href="https://wa.me/351917118000" class="whatsapp" target="_blank">WhatsApp</a>
 
 <footer>
-  <p>© KAJALJOIAS</p>
+
+<p>© KAJALJOIAS</p>
+
 </footer>
 
 </body>

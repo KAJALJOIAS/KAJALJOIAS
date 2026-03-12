@@ -11,7 +11,7 @@
 body{
 font-family: Arial, sans-serif;
 margin:0;
-background:#fdfbf6;
+background:linear-gradient(#ffffff,#f5f5f5);
 color:#333;
 }
 
@@ -20,19 +20,19 @@ color:#333;
 header{
 background:black;
 color:#d4af37;
-padding:40px 20px;
+padding:50px 20px;
 text-align:center;
 }
 
 header h1{
 margin:0;
-letter-spacing:4px;
-font-size:42px;
+letter-spacing:5px;
+font-size:48px;
 }
 
 header p{
 margin-top:10px;
-font-size:18px;
+font-size:20px;
 color:#f5e6b0;
 }
 
@@ -45,17 +45,17 @@ text-align:center;
 }
 
 nav a{
-margin:15px;
+margin:20px;
 text-decoration:none;
 color:black;
 font-weight:bold;
 font-size:18px;
 }
 
-/* SEÇÕES */
+/* SECÇÕES */
 
 section{
-padding:60px 20px;
+padding:70px 20px;
 text-align:center;
 }
 
@@ -63,33 +63,49 @@ text-align:center;
 
 .galeria{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:35px;
 padding:40px;
+max-width:1200px;
+margin:auto;
 }
 
 .item{
 background:white;
 padding:20px;
-border-radius:10px;
-box-shadow:0 0 15px rgba(0,0,0,0.15);
-transition:transform 0.3s;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.15);
+transition:transform 0.4s;
 }
 
 .item:hover{
-transform:scale(1.05);
+transform:scale(1.08);
 }
 
 .item img{
 width:100%;
-border-radius:8px;
+border-radius:10px;
+transition:transform 0.5s;
+}
+
+.item img:hover{
+transform:scale(1.2);
 }
 
 /* SERVIÇOS */
 
 .servicos{
-font-size:18px;
+font-size:19px;
 line-height:2;
+}
+
+/* SOBRE */
+
+.sobre{
+max-width:900px;
+margin:auto;
+font-size:20px;
+line-height:1.7;
 }
 
 /* CONTACTOS */
@@ -103,15 +119,15 @@ line-height:1.8;
 
 .whatsapp{
 position:fixed;
-bottom:20px;
-right:20px;
+bottom:25px;
+right:25px;
 background:#25d366;
 color:white;
-padding:15px 20px;
-border-radius:50px;
+padding:15px 22px;
+border-radius:40px;
 font-size:18px;
 text-decoration:none;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
+box-shadow:0 4px 12px rgba(0,0,0,0.4);
 }
 
 /* RODAPÉ */
@@ -119,8 +135,9 @@ box-shadow:0 4px 10px rgba(0,0,0,0.3);
 footer{
 background:black;
 color:#d4af37;
-padding:30px;
+padding:35px;
 text-align:center;
+margin-top:40px;
 }
 
 </style>
@@ -138,40 +155,47 @@ text-align:center;
 
 <nav>
 
-<a href="#joias">Joias</a>
+<a href="#artigos">Artigos</a>
 <a href="#servicos">Serviços</a>
+<a href="#sobre">Sobre</a>
 <a href="#contactos">Contactos</a>
 
 </nav>
 
-<section id="joias">
+<section id="artigos">
 
-<h2>As nossas joias</h2>
+<h2>Os nossos artigos</h2>
 
 <div class="galeria">
 
 <div class="item">
 <h3>Anéis</h3>
-<img src="anel.jpg">
-<p>Ouro e prata de alta qualidade</p>
+<img src="1CL-FLV001.2P.jpg">
+<p>Exemplo da nossa coleção</p>
+</div>
+
+<div class="item">
+<h3>Brincos</h3>
+<img src="1CL-FLV001.2P.jpg">
+<p>Exemplo da nossa coleção</p>
 </div>
 
 <div class="item">
 <h3>Colares</h3>
-<img src="colar.jpg">
-<p>Design elegante</p>
+<img src="1CL-FLV001.2P.jpg">
+<p>Exemplo da nossa coleção</p>
 </div>
 
 <div class="item">
 <h3>Pulseiras</h3>
-<img src="pulseira.jpg">
-<p>Clássicas e modernas</p>
+<img src="1CL-FLV001.2P.jpg">
+<p>Exemplo da nossa coleção</p>
 </div>
 
 <div class="item">
 <h3>Relógios</h3>
-<img src="relogio.jpg">
-<p>Para todos os estilos</p>
+<img src="1CL-FLV001.2P.jpg">
+<p>Exemplo da nossa coleção</p>
 </div>
 
 </div>
@@ -194,20 +218,33 @@ Furagem de orelhas
 
 </section>
 
+<section id="sobre">
+
+<h2>Sobre a KAJALJOIAS</h2>
+
+<div class="sobre">
+
+Criada em 2003 sobre a herança de 4ª geração de ourives, a KAJALJOIAS é mais do que uma ourivesaria... é uma forma de ser e de estar, baseada na tradição e na confiança, com foco total no Cliente.
+
+</div>
+
+</section>
+
 <section id="contactos">
 
 <h2>Contactos</h2>
 
 <p>
-Morada: Av. Júlio Dinis 6A, CC Arco Íris, Loja 8, Lisboa<br><br>
+Morada: Avenida Júlio Dinis 6A, 1050-131 Lisboa<br><br>
 Telefone: 211 993 379<br><br>
+WhatsApp: 917 118 000<br><br>
 Horário: 9h30 - 18h30
 </p>
 
 <iframe
-src="https://www.google.com/maps?q=Av.+J%C3%BAlio+Dinis+6A,+Lisboa&output=embed"
+src="https://www.google.com/maps?q=Avenida%20J%C3%BAlio%20Dinis%206A%2C%201050-131%20Lisboa&output=embed"
 width="100%"
-height="300"
+height="320"
 style="border:0;"
 allowfullscreen=""
 loading="lazy">

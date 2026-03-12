@@ -2,173 +2,204 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Ourivesaria KAJALJOIAS</title>
+<title>KAJALJOIAS</title>
 
 <style>
 
+/* Geral */
 body{
-font-family: Arial;
-margin:0;
-background:#f4f4f4;
+  font-family: Arial, sans-serif;
+  margin:0;
+  background:#fdfbf6;
+  color:#333;
 }
 
-/* topo */
-
+/* Cabeçalho */
 header{
-background:black;
-color:white;
-padding:30px;
-text-align:center;
+  background:black;
+  color:#f5d05a; /* dourado luxuoso */
+  padding:40px 20px;
+  text-align:center;
 }
 
 header h1{
-margin:0;
-letter-spacing:3px;
+  margin:0;
+  letter-spacing:4px;
+  font-size:3em;
 }
 
-/* menu */
+header p{
+  margin-top:10px;
+  font-size:1.2em;
+}
 
+/* Menu */
 nav{
-background:#c6a74a;
-padding:15px;
-text-align:center;
+  background:#f5d05a;
+  padding:15px;
+  text-align:center;
 }
 
 nav a{
-margin:20px;
-text-decoration:none;
-color:black;
-font-weight:bold;
+  margin:15px;
+  text-decoration:none;
+  color:black;
+  font-weight:bold;
+  font-size:1.1em;
+  transition: color 0.3s;
 }
 
-/* secções */
+nav a:hover{
+  color:#000;
+  text-shadow: 1px 1px 2px #555;
+}
 
+/* Seções */
 section{
-padding:60px 20px;
-text-align:center;
+  padding:60px 20px;
+  text-align:center;
 }
 
-/* galeria */
-
+/* Galeria de joias */
 .galeria{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-padding:40px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+  padding:40px;
 }
 
 .item{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 0 15px rgba(0,0,0,0.1);
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 0 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
 }
 
-/* serviços */
+.item:hover{
+  transform: scale(1.05);
+}
 
+.item img{
+  max-width:100%;
+  border-radius:10px;
+}
+
+/* Serviços */
 .servicos{
-font-size:18px;
-line-height:2;
+  font-size:18px;
+  line-height:2;
+  color:#333;
 }
 
-/* rodapé */
+/* Contactos */
+#contactos p{
+  font-size:18px;
+  line-height:1.8;
+}
 
+/* Botão WhatsApp */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25d366;
+  color:white;
+  padding:15px 20px;
+  border-radius:50px;
+  font-size:18px;
+  text-decoration:none;
+  box-shadow:0 4px 6px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.whatsapp:hover{
+  transform: scale(1.1);
+}
+
+/* Rodapé */
 footer{
-background:black;
-color:white;
-padding:30px;
-text-align:center;
+  background:black;
+  color:#f5d05a;
+  padding:30px;
+  text-align:center;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <header>
-
-<h1>OURIVESARIA</h1>
-<p>Elegância, tradição e confiança</p>
-
+  <h1>KAJALJOIAS</h1>
+  <p>Elegância, tradição e confiança</p>
 </header>
 
 <nav>
-
-<a href="#joias">Joias</a>
-<a href="#servicos">Serviços</a>
-<a href="#contactos">Contactos</a>
-
+  <a href="#joias">Joias</a>
+  <a href="#servicos">Serviços</a>
+  <a href="#contactos">Contactos</a>
 </nav>
 
 <section id="joias">
+  <h2>As nossas joias</h2>
+  <div class="galeria">
 
-<h2>As nossas joias</h2>
+    <div class="item">
+      <h3>Anéis</h3>
+      <img src="anel.jpg" alt="Anéis de Ouro e Prata">
+      <p>Ouro e prata de alta qualidade</p>
+    </div>
 
-<div class="galeria">
+    <div class="item">
+      <h3>Colares</h3>
+      <img src="colar.jpg" alt="Colares Elegantes">
+      <p>Design elegante e exclusivo</p>
+    </div>
 
-<div class="item">
-<h3>Anéis</h3>
-<p>Ouro e prata</p>
-</div>
+    <div class="item">
+      <h3>Pulseiras</h3>
+      <img src="pulseira.jpg" alt="Pulseiras Clássicas">
+      <p>Clássicas e modernas</p>
+    </div>
 
-<div class="item">
-<h3>Colares</h3>
-<p>Elegância e design</p>
-</div>
+    <div class="item">
+      <h3>Relógios</h3>
+      <img src="relogio.jpg" alt="Relógios para Todos os Estilos">
+      <p>Para todos os estilos</p>
+    </div>
 
-<div class="item">
-<h3>Colar</h3>
-<img src="1CL-FLV001.2P.jpg" width="200px">
-<p>Elegância e design</p>
-</div>
-  
-<div class="item">
-<h3>Pulseiras</h3>
-<p>Clássicas e modernas</p>
-</div>
-
-<div class="item">
-<h3>Relógios</h3>
-<p>Para todos os estilos</p>
-</div>
-
-</div>
-
+  </div>
 </section>
 
 <section id="servicos">
-
-<h2>Serviços</h2>
-
-<div class="servicos">
-
-Substituição de pilhas e braceletes<br>
-Reparação de relógios<br>
-Consertos de ouro e prata<br>
-Enfiamento de colares<br>
-Furagem de orelhas
-
-</div>
-
+  <h2>Serviços</h2>
+  <div class="servicos">
+    Substituição de pilhas e braceletes<br>
+    Reparação de relógios<br>
+    Consertos de ouro e prata<br>
+    Enfiamento de colares<br>
+    Furagem de orelhas
+  </div>
 </section>
 
 <section id="contactos">
-
-<h2>Contactos</h2>
-
-<p>
-Morada: Av. Júlio Dinis 6, CC Arco Íris, Loja 8<br><br>
-Telefone: 211993379<br><br>
-Horário: 9h30 - 18h30
-</p>
-
+  <h2>Contactos</h2>
+  <p>
+    Morada: Av. Júlio Dinis 6, CC Arco Íris, Loja 8<br>
+    Telefone: 211 993 379<br>
+    Horário: 9h30 - 18h30
+  </p>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3121.123456!2d-9.139681!3d38.716123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19347abcd!2sCC%20Arco%20Íris!5e0!3m2!1spt-PT!2spt!4v1690000000000!5m2!1spt-PT!2spt" 
+    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+  </iframe>
 </section>
 
+<a href="https://wa.me/351911234567" class="whatsapp" target="_blank">WhatsApp</a>
+
 <footer>
-
-<p>© Ourivesaria KAJALJOIAS</p>
-
+  <p>© KAJALJOIAS</p>
 </footer>
 
 </body>

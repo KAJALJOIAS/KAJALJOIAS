@@ -1,43 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Ourivesaria</title>
 <meta charset="UTF-8">
+<title>Ourivesaria</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f5f5f5;
+}
+
+header{
+background:black;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav{
+background:#bfa046;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+margin:15px;
+color:black;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+padding:40px;
+text-align:center;
+}
+
+.produtos{
+display:flex;
+justify-content:center;
+gap:40px;
+}
+
+.produto{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
 </head>
 
 <body>
 
-<h1>Bem-vindo à KAJALJOIAS</h1>
+<header>
+<h1>Ourivesaria</h1>
+<p>Tradição, elegância e confiança</p>
+</header>
 
-<p>Tradição, confiança e atendimento personalizado.</p>
+<nav>
+<a href="#">Início</a>
+<a href="#">Joias</a>
+<a href="#">Serviços</a>
+<a href="#">Contactos</a>
+</nav>
 
-<h2>Jóias</h2>
-<ul>
-<li>Anéis</li>
-<li>Colares</li>
-<li>Pulseiras</li>
-<li>Brincos</li>
-<li>Relógios</li>
-</ul>
+<section>
+<h2>As nossas joias</h2>
 
+<div class="produtos">
+
+<div class="produto">
+<h3>Anéis</h3>
+<p>Ouro e prata</p>
+</div>
+
+<div class="produto">
+<h3>Colares</h3>
+<p>Design elegante</p>
+</div>
+
+<div class="produto">
+<h3>Relógios</h3>
+<p>Clássicos e modernos</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
 <h2>Serviços</h2>
-<ul>
-<li>Substituição de pilhas e braceletes</li>
-<li>Reparação de relógios</li>
-<li>Consertos de ouro e prata</li>
-<li>Enfiamento de colares</li>
-<li>Furagem de orelhas</li>
-</ul>
 
-<h2>Sobre nós</h2>
-<p>Uma ourivesaria com mais de 20 anos de experiência, com foco na confiança e atendimento ao Cliente!</p>
-
-<h2>Contactos</h2>
 <p>
-Telefone: 211993379<br>
-Morada: R. Júlio Dinis 6A, CC Arco Íris, Loja 8<br>
-Horário: 9h30 - 18h30
+Substituição de pilhas e braceletes<br>
+Reparação de relógios<br>
+Consertos de ouro e prata<br>
+Enfiamento de colares<br>
+Furagem de orelhas
 </p>
+
+</section>
+
+<footer>
+
+<p>Av. Júlio Dinis 6A, CC Arco Íris, Loja 8</p>
+<p>211993379</p>
+
+</footer>
 
 </body>
 </html>

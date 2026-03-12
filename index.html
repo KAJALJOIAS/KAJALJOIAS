@@ -9,112 +9,159 @@
 body{
 font-family: Arial;
 margin:0;
-background:#f5f5f5;
+background:#f4f4f4;
 }
+
+/* topo */
 
 header{
 background:black;
 color:white;
-padding:20px;
+padding:30px;
 text-align:center;
 }
 
+header h1{
+margin:0;
+letter-spacing:3px;
+}
+
+/* menu */
+
 nav{
-background:#bfa046;
-padding:10px;
+background:#c6a74a;
+padding:15px;
 text-align:center;
 }
 
 nav a{
-margin:15px;
-color:black;
+margin:20px;
 text-decoration:none;
+color:black;
 font-weight:bold;
 }
 
+/* secções */
+
 section{
-padding:40px;
+padding:60px 20px;
 text-align:center;
 }
 
-.produtos{
-display:flex;
-justify-content:center;
-gap:40px;
+/* galeria */
+
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+padding:40px;
 }
 
-.produto{
+.item{
 background:white;
 padding:20px;
 border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+box-shadow:0 0 15px rgba(0,0,0,0.1);
 }
+
+/* serviços */
+
+.servicos{
+font-size:18px;
+line-height:2;
+}
+
+/* rodapé */
 
 footer{
 background:black;
 color:white;
+padding:30px;
 text-align:center;
-padding:20px;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <header>
-<h1>Ourivesaria</h1>
-<p>Tradição, elegância e confiança</p>
+
+<h1>OURIVESARIA</h1>
+<p>Elegância, tradição e confiança</p>
+
 </header>
 
 <nav>
-<a href="#">Início</a>
-<a href="#">Joias</a>
-<a href="#">Serviços</a>
-<a href="#">Contactos</a>
+
+<a href="#joias">Joias</a>
+<a href="#servicos">Serviços</a>
+<a href="#contactos">Contactos</a>
+
 </nav>
 
-<section>
+<section id="joias">
+
 <h2>As nossas joias</h2>
 
-<div class="produtos">
+<div class="galeria">
 
-<div class="produto">
+<div class="item">
 <h3>Anéis</h3>
 <p>Ouro e prata</p>
 </div>
 
-<div class="produto">
+<div class="item">
 <h3>Colares</h3>
-<p>Design elegante</p>
+<p>Elegância e design</p>
 </div>
 
-<div class="produto">
+<div class="item">
+<h3>Pulseiras</h3>
+<p>Clássicas e modernas</p>
+</div>
+
+<div class="item">
 <h3>Relógios</h3>
-<p>Clássicos e modernos</p>
+<p>Para todos os estilos</p>
 </div>
 
 </div>
 
 </section>
 
-<section>
+<section id="servicos">
+
 <h2>Serviços</h2>
 
-<p>
-Substituição de pilhas e braceletes<br>
+<div class="servicos">
+
+Substituição de pilhas<br>
 Reparação de relógios<br>
-Consertos de ouro e prata<br>
+Reparação de ouro e prata<br>
 Enfiamento de colares<br>
-Furagem de orelhas
+Furos nas orelhas
+
+</div>
+
+</section>
+
+<section id="contactos">
+
+<h2>Contactos</h2>
+
+<p>
+Morada da loja<br><br>
+Telefone<br><br>
+Horário
 </p>
 
 </section>
 
 <footer>
 
-<p>Av. Júlio Dinis 6A, CC Arco Íris, Loja 8</p>
-<p>211993379</p>
+<p>© Ourivesaria</p>
 
 </footer>
 

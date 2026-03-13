@@ -20,20 +20,27 @@ color:#333;
 header{
 background:black;
 color:#d4af37;
-padding:50px 20px;
-text-align:center;
+padding:30px 20px;
+}
+
+.header-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+max-width:1100px;
+margin:auto;
 }
 
 header h1{
 margin:0;
 letter-spacing:5px;
 font-size:48px;
+text-align:center;
+flex-grow:1;
 }
 
-header p{
-margin-top:10px;
-font-size:20px;
-color:#f5e6b0;
+.logo{
+height:70px;
 }
 
 /* MENU */
@@ -123,9 +130,9 @@ bottom:25px;
 right:25px;
 background:#25d366;
 color:white;
-padding:15px 22px;
-border-radius:40px;
-font-size:18px;
+padding:22px 30px;
+border-radius:45px;
+font-size:26px;
 text-decoration:none;
 box-shadow:0 4px 12px rgba(0,0,0,0.4);
 }
@@ -148,17 +155,24 @@ margin-top:40px;
 
 <header>
 
+<div class="header-container">
+
+<img src="Logo.KAJALJOIAS.jpg" class="logo">
+
 <h1>KAJALJOIAS</h1>
-<p>Elegância, tradição e confiança</p>
+
+<img src="Logo.KAJALJOIAS.jpg" class="logo">
+
+</div>
 
 </header>
 
 <nav>
 
-<a href="#artigos">Artigos</a>
-<a href="#servicos">Serviços</a>
-<a href="#sobre">Sobre</a>
-<a href="#contactos">Contactos</a>
+<a href="#artigos">💍 Artigos</a>
+<a href="#servicos">🔧 Serviços</a>
+<a href="#sobre">🏛️ Sobre</a>
+<a href="#contactos">📞 Contactos</a>
 
 </nav>
 
@@ -204,7 +218,7 @@ margin-top:40px;
 
 <section id="servicos">
 
-<h2>Serviços</h2>
+<h2>🔧 Serviços</h2>
 
 <div class="servicos">
 
@@ -220,7 +234,7 @@ Furagem de orelhas
 
 <section id="sobre">
 
-<h2>Sobre a KAJALJOIAS</h2>
+<h2>🏛️ Sobre a KAJALJOIAS</h2>
 
 <div class="sobre">
 
@@ -232,7 +246,7 @@ Criada em 2003 sobre a herança da 4ª geração de ourives, a KAJALJOIAS é mai
 
 <section id="contactos">
 
-<h2>Contactos</h2>
+<h2>📞 Contactos</h2>
 
 <p>
 Morada: Avenida Júlio Dinis 6A, 1050-131 Lisboa<br><br>
@@ -252,7 +266,7 @@ loading="lazy">
 
 </section>
 
-<a href="https://wa.me/351917118000" class="whatsapp" target="_blank">WhatsApp</a>
+<a href="https://wa.me/351917118000" class="whatsapp" target="_blank">💬 WhatsApp</a>
 
 <footer>
 

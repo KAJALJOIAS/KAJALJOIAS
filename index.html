@@ -11,8 +11,8 @@
 body{
 font-family: Arial, sans-serif;
 margin:0;
-background:linear-gradient(#ffffff,#f5f5f5);
-color:#333;
+background:radial-gradient(circle at top,#1a1a1a,#000000);
+color:#f5f5f5;
 }
 
 /* CABEÇALHO */
@@ -78,15 +78,21 @@ margin:auto;
 }
 
 .item{
-background:white;
+background:#111;
 padding:20px;
 border-radius:12px;
-box-shadow:0 5px 20px rgba(0,0,0,0.15);
+border:1px solid #d4af37;
+box-shadow:0 5px 20px rgba(0,0,0,0.4);
 transition:transform 0.4s;
 }
 
 .item:hover{
 transform:scale(1.08);
+box-shadow:0 0 25px rgba(212,175,55,0.6);
+}
+
+.item h3{
+color:#d4af37;
 }
 
 .item img{
@@ -130,9 +136,9 @@ bottom:25px;
 right:25px;
 background:#25d366;
 color:white;
-padding:22px 30px;
+padding:24px 34px;
 border-radius:45px;
-font-size:26px;
+font-size:28px;
 text-decoration:none;
 box-shadow:0 4px 12px rgba(0,0,0,0.4);
 }
@@ -178,14 +184,14 @@ margin-top:40px;
 
 <section id="artigos">
 
-<h2>Os nossos artigos</h2>
+<h2>💍 Os nossos artigos</h2>
 
 <div class="galeria">
 
 <div class="item">
 <h3>Anéis</h3>
 <img src="1AS-111004.jpg">
-<p>Alianças, Solitários, ...</p>
+<p>Alianças, Solitários...</p>
 </div>
 
 <div class="item">
@@ -275,4 +281,5 @@ loading="lazy">
 </footer>
 
 </body>
+</html>
 </html>
